@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMH CLO | ORDER FORM</title>
+    <link rel="icon" href="SMH CLO_Logo.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+   
+</head>
+<body vlink="#af765b">
+
+    <section>
+        <header>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo"><span>SMH</span>CLO</a>
+            <div></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="connect.html">Connect With Us</a></li>
+            </ul>
+        </header>
+
+        <div style = "text-align: center;" class="order_form">
+            <i style="font-size: 90px; color: #ff5100; display: inline-flex; " class="fa fa-shopping-cart"></i>
+            <a>Order Form</a>
+        </div>
+
+        <div class="box_orderform">
+            <div class="personalInfo">
+                <form id='order-form-info' class='input-order-form-info' action="order_form.html" method="post">
+                    <! ---- PERSONAL INFO FORM ----> 
+                        <b><label for='date'>Date</label></b>
+                        <input type='text' class='input-text' id='date' placeholder='MM/DD/YYYY' required ><br>
+                        <b><label for='email'>Email</label></b>
+                        <input type='text' class='input-text' id='email' placeholder='username@email.com' required > <br>
+
+                    <! ---- DELIVERY ADDRESS ---->
+                        <b><label for='address'>Delivery Address</label></b>
+                        <input type='text' class='input-text' id='address' placeholder='Street Address, Building, House No.' required > <br>
+                        <b><label for='barangay'>Barangay</label></b>
+                        <input type='text' class='input-text' id='barangay' placeholder='Barangay No.' required > <br>
+                        <b><label for='city'>City</label></b>
+                        <input type='text' class='input-text' id='city' placeholder='City' required > <br>
+                        <b><label for='region'>Region</label></b>
+                        <input type='text' class='input-text' id='region' placeholder='Region' required > <br>
+                        <b><label for='postalCode'>Postal Code</label></b>
+                        <input type='text' class='input-text' id='postalCode' placeholder='Postal Code' required > <br>
+            </div>
+                
+                <! ---- ORDER/S ---->
+                <div class= "orderInfo">
+                    <table style= "border-color:#5b2413" width="40%"  id="alignment">
+                        <tr>
+                            <th>Item</th>
+                            <th> </th>
+                            <th>Size</th>
+                            <th>Quantity</th>
+                            <th>Price</th> 
+                        </tr> 
+
+                        <tr> 
+                        <td>1:</td> 
+                            <td>
+                            <select id="item1">
+                                <option value="1">---Select Item---</option> 
+                                <option value="SH-TOP">SH-TOP</option> 
+                                <option value="SH-LILACSKIRT">SH-LILACSKIRT</option> 
+                                <option value="SH-OLIVESKIRT">SH-OLIVESKIRT</option> 
+                                <option value="ZR-GRAYTOP">ZR-GRAYTOP</option> 
+                                <option value="ZR-MAROONTOP">ZR-MAROONTOP</option>
+                                <option value="ZR-BLUETOP">ZR-BLUETOP</option> 
+                                <option value="ZR-ORANGETOP">ZR-ORANGETOP</option>
+                                <option value="ZR-MUSTARDTOP">ZR-MUSTARDTOP</option> 
+                                <option value="BK-BLACKTOP">BK-BLACKTOP</option> 
+                                <option value="BK-WHITETOP ">BK-WHITETOP </option> 
+                                <option value="BK-BLUETOP">BK-BLUETOP</option> 
+                                <option value="BK-MUSTARDTOP">BK-MUSTARDTOP</option> 
+                                <option value="BK-ORANGETOP">BK-ORANGETOP</option> 
+                                <option value="OR-CREAMTOP">BK-CREAMTOP</option> 
+                                <option value="OR-BEIGETOP">BK-BEIGETOP</option> 
+                                <option value="NK-BLACKSHORT">NK-BLACKSHORT</option> 
+                                <option value="NK-ROSESHORT">NK-ROSESHORT</option>
+                                <option value="NK-BLUESHORT">NK-BLUESHORT</option> 
+                                <option value="NK-GREENSHORT">NK-GREENSHORT</option>
+                            </select>
+                            </td>
+                            
+                        <td>
+                            <select id="size1">
+                                <option value="1">---Select Size---</option> 
+                                <option value="Extra Small">XS</option> 
+                                <option value="Small">S</option> 
+                                <option value="Medium">M</option> 
+                                <option value="Large">L</option> 
+                            </select>
+                        </td>
+
+                        <td><input type="number" value="0" id="q1"></td>
+                        <td><input type="text" id="p1"></td>
+                        </tr> 
+
+                        <tr>
+                        <td>2:</td>
+                            <td>
+                            <select id="item2">
+                                <option value="2">---Select Item---</option>  
+                                <option value="SH-TOP">SH-TOP</option> 
+                                <option value="SH-LILACSKIRT">SH-LILACSKIRT</option> 
+                                <option value="SH-OLIVESKIRT">SH-OLIVESKIRT</option> 
+                                <option value="ZR-GRAYTOP">ZR-GRAYTOP</option> 
+                                <option value="ZR-MAROONTOP">ZR-MAROONTOP</option>
+                                <option value="ZR-BLUETOP">ZR-BLUETOP</option> 
+                                <option value="ZR-ORANGETOP">ZR-ORANGETOP</option>
+                                <option value="ZR-MUSTARDTOP">ZR-MUSTARDTOP</option> 
+                                <option value="BK-BLACKTOP">BK-BLACKTOP</option> 
+                                <option value="BK-WHITETOP ">BK-WHITETOP </option> 
+                                <option value="BK-BLUETOP">BK-BLUETOP</option> 
+                                <option value="BK-MUSTARDTOP">BK-MUSTARDTOP</option> 
+                                <option value="BK-ORANGETOP">BK-ORANGETOP</option> 
+                                <option value="OR-CREAMTOP">BK-CREAMTOP</option> 
+                                <option value="OR-BEIGETOP">BK-BEIGETOP</option> 
+                                <option value="NK-BLACKSHORT">NK-BLACKSHORT</option> 
+                                <option value="NK-ROSESHORT">NK-ROSESHORT</option>
+                                <option value="NK-BLUESHORT">NK-BLUESHORT</option> 
+                                <option value="NK-GREENSHORT">NK-GREENSHORT</option>  
+                            </select>
+                            </td>
+                        
+                        <td>
+                            <select id="size2">
+                                <option value="1">---Select Size---</option> 
+                                <option value="Extra Small">XS</option> 
+                                <option value="Small">S</option> 
+                                <option value="Medium">M</option> 
+                                <option value="Large">L</option> 
+                            </select>
+                        </td>
+
+                        <td><input  type="number" value="0" id="q2"></td>  
+                        <td><input type="text"  id="p2"></td>  
+                        </tr> 
+
+                        <tr>
+                        <td>3:</td>
+                        <td>
+                            <select id="item3"> 
+                                <option value="3">---Select Item---</option>  
+                                <option value="SH-TOP">SH-TOP</option> 
+                                <option value="SH-LILACSKIRT">SH-LILACSKIRT</option> 
+                                <option value="SH-OLIVESKIRT">SH-OLIVESKIRT</option> 
+                                <option value="ZR-GRAYTOP">ZR-GRAYTOP</option> 
+                                <option value="ZR-MAROONTOP">ZR-MAROONTOP</option>
+                                <option value="ZR-BLUETOP">ZR-BLUETOP</option> 
+                                <option value="ZR-ORANGETOP">ZR-ORANGETOP</option>
+                                <option value="ZR-MUSTARDTOP">ZR-MUSTARDTOP</option> 
+                                <option value="BK-BLACKTOP">BK-BLACKTOP</option> 
+                                <option value="BK-WHITETOP ">BK-WHITETOP </option> 
+                                <option value="BK-BLUETOP">BK-BLUETOP</option> 
+                                <option value="BK-MUSTARDTOP">BK-MUSTARDTOP</option> 
+                                <option value="BK-ORANGETOP">BK-ORANGETOP</option> 
+                                <option value="OR-CREAMTOP">BK-CREAMTOP</option> 
+                                <option value="OR-BEIGETOP">BK-BEIGETOP</option> 
+                                <option value="NK-BLACKSHORT">NK-BLACKSHORT</option> 
+                                <option value="NK-ROSESHORT">NK-ROSESHORT</option>
+                                <option value="NK-BLUESHORT">NK-BLUESHORT</option> 
+                                <option value="NK-GREENSHORT">NK-GREENSHORT</option> 
+                            </select>
+                        </td>
+
+                        <td>
+                            <select id="size3">
+                                <option value="1">---Select Size---</option> 
+                                <option value="Extra Small">XS</option> 
+                                <option value="Small">S</option> 
+                                <option value="Medium">M</option> 
+                                <option value="Large">L</option> 
+                            </select>
+                        </td>
+                    
+                        <td><input type="number" value="0" id="q3"></td>
+                        <td><input type="text"  id="p3"></td> 
+                        </tr> 
+
+                        <tr>
+                        <td></td> 
+                        <td></td> 
+                        </tr>
+                        </table>
+                </div>
+
+                <! ---- SHIPPING FEE ---->
+                <div class = "shipping-fee">
+                    <b><label for= "shipping_fee" style = "color:#5b2413">Please select your location for the shipping fee</label></b> </div>
+        
+                    <label for= "shipping_fee"><input type="radio" id="Luzon" name="shipping_fee" value="120" class="radiobutton-order"></label>
+                    <p class="order-font-radio-a">Metro Manila - ₱120</p>
+                    <label for= "shipping_fee"><input type="radio" id="Luzon" name="shipping_fee" value="110" class="radiobutton-order"></label>
+                    <p class="order-font-radio-b">Luzon - ₱110</p>
+                    <span><label for= "shipping_fee"><input type="radio" id="VizMin" name="shipping_fee" value="130" class="radiobutton-order"></label>
+                    <p class="order-font-radio-c">Visayas/Mindanao - ₱130</p> </span>
+              
+                <! ---- TOTAL AMOUNT ---->
+                <div class = "total">
+                    <b><label for='total_amt'>Total Amount</label></b> <br>
+                    <input type='text' class='input-text' id='total' placeholder='Amount to be paid.'>
+                </div>
+
+                <! ---- ORDER COMMENTS ---->
+                <div class = "order_comments">
+                    <b><label for='total_amt'>Order Comments</label></b> <br>
+                    <input type='text' class='input-text' id='total' placeholder='Leave us a note for your order.'>
+                </div>
+
+                <! ---- BUTTONS ---->
+                <div class = "order-form-buttons">
+                        <input type="button" class="order_button" value="Cancel" onclick="document.location='products.html'">
+                        <button type='submit' class='order_button'>Confirm</button>
+                </div>
+            </form>
+
+        </div> <br><br><br><br>
+
+
+
+
+   <!--footer-->
+
+   <footer class="footer">
+    <div class="main">
+        <div class="row">
+            <div class="footer_col">
+                <h4>SMH CLO</h4>
+                <ul>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="our_services.html">Our services</a></li>
+                    <li><a href="privacy_policy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="faqs.html">Shipping</a></li>
+                    <li><a href="faqs.html">Returns</a></li>
+                    <li><a href="faqs.html">Payment options</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="bershka.html">Bershka</a></li>
+                    <li><a href="nike.html">Nike</a></li>
+                    <li><a href="orseund.html">Orseund</a></li>
+                    <li><a href="shein.html">Shein</a></li>
+                    <li><a href="zara.html">Zara</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Follow us</h4>
+                <div class="social">
+                    <li><a href="connect.html">Instagram</a></li>
+                    <li><a href="connect.html">Facebook</a></li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

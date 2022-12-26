@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="icon" href="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/319673863_1325466124952779_7353689239781133386_n.png?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEVpFCukaEeEITbwkLuknhuNDP1u2frxFg0M_W7Z-vEWJ8Xt8_s5YgB3EF2BeF3K38xkb8ie9eOSmkFojXrz57i&_nc_ohc=5WC3qnaKsE4AX-u9PqY&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdQT_rfhgrKYiKMKvqisdOebe6TxPNkvh8dCFrcSpYtPPQ&oe=63C3AF24" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+}
+section {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+    /*changed*/
+section header .logo {
+    position: relative; /*added*/
+    left: 78px;      /*she's right eyy*/
+    font-size: 30px;
+    color: #7f564d;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+    
+}
+
+section header .logo span {
+    color: #ff914d;
+}
+
+    /*changed*/ 
+section header ul li {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+    /*changed*/
+section header ul li a {
+    font-size: 23px;
+    color: #af765b;
+    padding: 13px 6px;  /*box yarn*/
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    transition: all .4s; /*smooth like butter*/
+}
+    /*changed*/
+section header ul li a:hover {
+    color: #ffffff;
+    background-color: #f37048;
+    box-shadow: 0px 0px 20px 6px rgb(255, 167, 104);
+}
+section header ul li a:active {
+    color: #ff5100;
+    background-color: #f8af99;
+    border: 1px solid orangered;
+    box-shadow: 0px 0px 25px 6px rgb(255, 167, 104);
+}
+    /*ADDED*/
+.sign {
+    color: #ffffff;
+    background-color: #f37048;
+}
+.sign:hover {
+    color: #ffffff;
+    box-shadow: 0px 0px 20px 4px rgb(255, 167, 104);
+}
+
+section header p:hover {
+    color: #ff914d;
+    background: #f4e5b8;
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4e5b8;
+    clip-path: circle(320px at left -230px);
+    z-index: -1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4e5b8;
+    clip-path: circle(250px at right 800px);
+    z-index: -1;
+}
+
+section .texts h1 {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    color: #ff914d;
+}
+
+section .texts h1 span {
+    color: #7f564d;
+}
+
+section .texts p {
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+    /*changed*/
+section .background_image img {
+    width: 550px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: 10px;
+    opacity: 70%;   /*added*/
+    border-radius: 15%;/*added*/
+    border: 3px solid rgb(236, 236, 236);/*added*/
+    transition: all .5s;/*added*/
+}
+/*ADDED from line 147 - 153*/
+section .background_image img:hover {
+    opacity: 90%;
+    transform: rotate3d(0, 50, -10, -5deg);
+    border: 3px solid rgb(255, 209, 123);
+    box-shadow: 0 0 20px 5px rgba(253, 152, 105, 0.3);
+}
+
+section .btn {
+    position: relative;
+    top: 77%;
+    left: 38px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+section .btn .read {
+    background: #f4e5b8;
+    transition: all .5s;
+}
+
+section .btn .read:hover {
+    background:rgb(253, 169, 108);
+}
+
+section .btn p {
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #7f564d;
+    cursor: pointer;
+}
+
+section .btn a {
+    list-style: none;
+    text-decoration: none;
+}
+
+section .btn a:link,
+a:visited {
+    color: #24262b;
+}
+
+.footer {
+    width: 100%;
+    background: #24262b;
+    padding: 50px;
+}
+
+.footer .main {
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer_col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #ff914d;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer_col ul li {
+    margin-bottom: 20px;
+}
+
+.footer_col ul li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+    transition: all .3s;
+}
+.footer_col ul li a:hover {
+    text-decoration: none;
+    color: #da7829;
+}
+
+.footer_col .social {
+    width: 20px;
+    margin: 5px;
+}
+
+.footer_col .social li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.footer_col .social li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+    transition: all .3s;
+}
+.footer_col .social li a:hover {
+    text-decoration: none;
+    color: #da7829;
+}
+
+<!--css of product!-->
+.main {
+  padding: 10px;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.main h2 {
+  font-size: 30px;
+  word-break: break-all;
+}
+
+.main h3{
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: #662a17;
+}
+.main h4{
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+.main h5{
+  font-family: Garamond, serif;
+  text-align: center;
+  color: #9b6951;
+}
+.main p{
+  font-size: 16px;
+  font-family: Garamond, serif;
+  text-align: center;
+  color: #9b6951;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.rowproduct,
+.rowproduct > .columnproduct {
+  padding: 20px;
+}
+
+/* Create four equal columns that floats next to each other */
+.columnproduct {
+  float: left;
+  width: 20%;
+  margin-left: 55px;
+  padding: 0%;
+}
+
+.columnproduct img {
+  border-radius: 10px;
+}
+
+/* Clear floats after rows */
+.rowproduct:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentproduct {
+  border-radius: 5%;
+  background-color: #f5f3ef;
+  padding: 20px;
+  color: #f37048  ;
+  border: 2px solid #ff914d;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .columnproduct {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnproduct {
+    width: 100%;
+  }
+}
+
+button {
+  width: 15%;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  background-color: #7f564d;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  font-family: 'Teko', sans-serif;
+}
+
+.button {
+  text-align: center;
+}
+
+.button :hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+   </style>
+</head>
+<body vlink="#af765b">
+  <section>
+      <header>
+        <div class="circle"></div>
+        <div class="circles"></div>
+          <a href="#" class="logo"><span>SMH</span>CLO</a>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="connect.html">Connect With Us</a></li>
+          </ul>       
+        </header>
+    </section>
+
+    <!--products section-->
+    <!--ZARA!-->
+    <div class="main" style="margin-top: 100px;>
+        <a href="zara.html" style="text-decoration: none;" >
+        <h2 style="text-align:center; color: #662a17; font-family: 'Courier New'; margin-bottom: 25px;">&#10018; ZARA &#10018;</h2>
+        </a>
+        <div class="rowproduct">
+          <div class="columnproduct" style="margin-left: 205px;">
+            <div class="contentproduct">
+              <h4>ZR-GRAYTOP</h4>
+              <img src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/316604973_986392335658872_7865104348551634769_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGfRITnEhlbnb2fFmvMAssHgK-pBESEaA-Ar6kERIRoDytUSqCPGq40IpnfnDcdoTuh-su__yY1XzmwDes0ezIG&_nc_ohc=yBEWvB8aaDwAX91YIOt&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdQMsx3ui-EaoBjrRmJqXsjmCIkNxAbToXSqHxPMGTxtqQ&oe=63C381B1" alt="Mountains" style="width:100%">
+              <h3>Strappy Crop Top</h3>
+              <p>Gray (S)</p>
+              <h5>₱160</h5>
+            </div>
+          </div>
+          <div class="columnproduct">
+            <div class="contentproduct">
+              <h4>ZR-MAROONTOP</h4>
+              <img src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/315014766_828386304935207_9076271754849329222_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGhbNCrC9Gl0IGj_dPuXJbtLzP7z8Qn3SQvM_vPxCfdJDk2NX3Dn_FLKXemKiPjcjn8nAmjGH0AMgYwOfsUuqhN&_nc_ohc=Kzm4BvZetsMAX8hitnm&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdSGXdeX8GHau3prk4jRASdvYGDBG7vh3wYHnvDkTGcSbA&oe=63C396EC" alt="Lights" style="width:100%">
+              <h3>Strappy Crop Top</h3>
+              <p>Maroon (S, M)</p>
+              <h5>₱160</h5>
+            </div>
+          </div>
+          <div class="columnproduct">
+            <div class="contentproduct">
+              <h4>ZR-BLUETOP</h4>
+              <img src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/318274189_819194342519328_8932722936873088230_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGEohREZkvv-2o-boqjBIScnZms08MqKr-dmazTwyoqv279N-JPSgfnmMpl7XxPUBEJlFSj39bEa1vsLZxOapyt&_nc_ohc=JgtwARsCjLcAX8wTpDz&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdQk-VW8WofFqD-D6MuIJmLmL4JPi6r7mYxOxXnGDrfH9w&oe=63C391FB" alt="Nature" style="width:100%">
+              <h3>Strappy Crop Top</h3>
+              <p>Turquoise Blue (M)</p>
+              <h5>₱160</h5>
+            </div>
+          </div>
+          </div>
+          <div class="rowproduct">
+          <div class="columnproduct" style="margin-left: 370px;">
+              <div class="contentproduct">
+                <h4>ZR-ORANGETOP</h4>
+                <img src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/318606573_495554159309229_5610333730987477216_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE2GiIAhqjgE5PhE4T7PP8srk3MDtOWLOmuTcwO05Ys6bwQsiC01NToviprblpzfS5MPdTKzt9wlHP1DxrjmKw3&_nc_ohc=x4aQ82XhCBgAX-JAXZK&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdSwQZ154b4Lj0sUGuwyHAm2bC6v9cJedLnkXKSO_efPNQ&oe=63C39818" alt="Lights" style="width:100%">
+                <h3>Strappy Crop Top</h3>
+                <p>Orange (M, L) </p>
+                <h5>₱160</h5>
+              </div>
+            </div>
+            <div class="columnproduct">
+              <div class="contentproduct">
+                <h4>ZR-MUSTARDTOP</h4>
+                <img src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t1.15752-9/318857807_967381797568882_6002414184572388236_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE_FP4v5L2hYKodQ_eieSsqYv6_LAnemSFi_r8sCd6ZIdsi3ixXdxqLVO7H7Weypot_pMiUC00ZFAjd-MGuzH5p&_nc_ohc=3g_xhXe-g1gAX823o4P&tn=GTlfjM4BZsN0lghc&_nc_ht=scontent.fmnl2-2.fna&oh=03_AdS95dSIeNJz1a3lW1cSSy7C9Rdvrw_k54iuF8FO0Qd5BA&oe=63C39025" alt="Nature" style="width:100%">
+                <h3>Strappy Crop Top</h3>
+                <p>Mustard (XS, S, M)</p>
+                <h5>₱160</h5>
+              </div>
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="document.location='order_form.html'" type="Order Form">Order Form</button>
+          </div>
+        </div>
+        <br><br>
+      <!-- END MAIN -->
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="main">
+          <div class="row">
+              <div class="footer_col">
+                  <h4 style="color: white; text-align: left; ">SMH CLO</h4>
+                  <ul>
+                    <br><font style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                      <li><a href="about_us.html">About us</a></li>
+                      <li><a href="our_services.html">Our services</a></li>
+                      <li><a href="privacy_policy.html">Privacy policy</a></li></font>
+                  </ul>
+              </div>
+
+              <div class="footer_col">
+                  <h4 style="color: white; text-align: left; ">Get Help</h4>
+                  <ul>
+                    <br><font style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                      <li><a href="faqs.html">FAQ</a></li>
+                      <li><a href="faqs.html">Shipping</a></li>
+                      <li><a href="faqs.html">Returns</a></li>
+                      <li><a href="faqs.html">Payment options</a></li></font >
+                  </ul>
+              </div>
+
+              <div class="footer_col">
+                  <h4 style="color: white; text-align: left; " >Shop</h4>
+                  <ul>
+                    <br><font style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                      <li><a href="bershka.html">Bershka</a></li>
+                      <li><a href="nike.html">Nike</a></li>
+                      <li><a href="orseund.html">Orseund</a></li>
+                      <li><a href="shein.html">Shein</a></li>
+                      <li><a href="zara.html">Zara</a></li></font>
+                  </ul>
+              </div>
+
+              <div class="footer_col">
+                  <h4 style="color: white; text-align: left; ">Follow us</h4>
+                  <div class="social">
+                    <br><font style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 0%;">
+                      <li><a href="connect.html">Instagram</a></li>
+                      <li><a href="connect.html">Facebook</a></li></font>
+                  </div>               
+              </div>
+          </div>
+      </div>
+  </footer>
+    
+</body>
+</html>
